@@ -16,4 +16,9 @@
     <select id="getPassword" resultType="string">
         select password from users where username=#{username};
     </select>
+
+    <!--增加一个用户-->
+    <insert id="insertOne" parameterType="user" useGeneratedKeys="true" keyProperty="id">
+         insert into users(username,password) value(#{user.username},#{user.password})
+    </insert>
 </mapper>

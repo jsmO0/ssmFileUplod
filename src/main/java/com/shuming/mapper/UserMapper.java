@@ -20,4 +20,11 @@ public interface UserMapper {
     List<String> getAllUsername();
 
     String getPassword(@Param("username") String username);
+
+    /**
+     * 插入一个用户信息
+     * @param user
+     * @return
+     */
+    void  insertOne(@Param("user") User user);
 }

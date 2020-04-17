@@ -24,4 +24,10 @@ public interface UserDao {
      * @return
      */
     String getPassword(String username);
+
+    /**
+     * 插入一个用户
+     * @param user
+     */
+    void insertOne(User user);
 }

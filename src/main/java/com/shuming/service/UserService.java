@@ -9,5 +9,5 @@ public interface UserService {
     User get(int id);
     List<String> getAllUsername();
     String getPassword(String username);
-
+    void insertOne(User user);
 }

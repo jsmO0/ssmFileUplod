@@ -11,6 +11,13 @@
     <title>Title</title>
 </head>
 <body>
-   欢迎登录:<h1>${username}</h1>
+  <div>
+   欢迎登录:<h1>${username}</h1><br><br>
+   <a href="toDownload.do">点击下载文件</a><br><br>
+   <form action="upload.do"  method="post" enctype="multipart/form-data">
+       <input type="file" name="uploadFile" ><br><br>
+       <input type="submit" value="立即上传">
+   </form>
+  </div>
 </body>
 </html>

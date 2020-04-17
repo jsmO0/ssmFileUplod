@@ -24,4 +24,11 @@ public class UserDaoImpl implements UserDao {
 
         return GetMapper.get().getPassword(username);
     }
+
+    @Override
+    public void insertOne(User user) {
+        GetMapper.get().insertOne(user);
+    }
+
+
 }
